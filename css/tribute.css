@@ -1,0 +1,102 @@
+
+
+.content{
+    height: 100vh;
+    width: 100%;
+   background-color: black;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-decoration-color: white;
+}
+.logo{
+    color: white; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px rgb(255, 94, 0), 0 0 80px rgb(255, 94, 0), 0 0 90px rgb(255, 94, 0);
+    font-size: 150%;
+    letter-spacing: 5px;
+    right: 200px; 
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    position: relative;
+     text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: white;
+
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: orangered;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.detail{
+    margin: 8% 0 0  45%;
+    letter-spacing: 2px;
+}
+.detail h1{
+    font-size: 30px;
+    color:white;
+    margin-bottom:20px ;
+}
+.detail h3{
+    color: white;
+}
+span{
+    color: orangered;
+}
+.detail p{
+    color: white;
+    line-height: 25px;
+}
+.detail a{
+     background: orangered;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.image{
+    width: 45%;
+    height: 75%;
+    bottom: 30px;
+    position: absolute;
+    
+}
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: right 2s, left 1s;
+    border-radius: 15px;
+    
+}
+.image:hover .newton{
+    left: 45%;
+}
